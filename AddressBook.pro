@@ -11,10 +11,17 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = AddressBook
 TEMPLATE = app
 
+CONFIG +=c++11
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    addressbookentry.cpp \
+    addressbook.cpp \
+    addressbookcontroller.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    addressbookentry.h \
+    addressbook.h \
+    addressbookcontroller.h
 
 FORMS    += mainwindow.ui
